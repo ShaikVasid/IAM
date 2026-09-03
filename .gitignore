@@ -1,0 +1,30 @@
+# Terraform downloaded provider binaries & plugins
+**/.terraform/*
+.terraform/
+.terraform.lock.hcl
+
+# Terraform state files (may contain secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform override files (local dev only)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan output (contains sensitive data)
+*.tfplan
+
+# macOS
+.DS_Store

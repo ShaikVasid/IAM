@@ -10,6 +10,10 @@ resource "aws_iam_role" "codepipeline_role" {
       Action    = "sts:AssumeRole"
     }]
   })
+    tags = {
+    ManagedBy = "Terraform"
+    project   = "jobmatch"
+  }
 }
 
 resource "aws_iam_role_policy" "codepipeline_policy" {
